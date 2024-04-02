@@ -1,0 +1,20 @@
+
+Css Units
+Layout fixo -> px
+Layout Fluído -> 
+% Porcentagem
+vh - Viewport Height
+vw - Viewport Width
+
+Textos fixos
+1px = 0.75pt
+16px = 12pt
+
+Textos fluídos
+'em' - multiplicado pelo pai 
+
+ul - font-size 14px
+li - font-size 14px
+a - 2em 2 * 28
+
+'rem' -

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202024;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #581c87;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #581c87;
+}
+
+@-moz-document url-prefix() {
+
+  /*Mobile menu hamburguer */
+  .firefox-menu {
+    gap: 1rem;
+    margin-left: 1rem;
+  }
+
+   /*Navbar Container*/
+  .firefox-container {
+    gap: 4;
+  }
+
+  /*Hero title*/
+  .firefox-title {
+    font-size: 2rem;
+  }
+
+  /*Hero Button*/
+  .firefox-button {
+    border: 2px solid white;
+  }
+
+
+  .firefox-card {
+      width: 80vw;
+      margin-left: 0.3rem;
+  }
+
+  .firefox-button-position {
+    display: flex;
+    justify-items: start;
+  }
+}
+
