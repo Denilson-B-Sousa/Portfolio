@@ -35,13 +35,13 @@ export function Navbar() {
           <div>
             <a
               href="#"
-              className="font-bold text-xl md:text-sm ml-4 lg:ml-1 xl:ml-6 xl:text-lg uppercase"
+              className="font-Poppins font-bold text-xl md:text-sm ml-4 lg:ml-1 xl:ml-6 xl:text-lg uppercase"
             >
               Denilson B. Sousa
             </a>
           </div>
 
-          <div className="flex justify-end ml-8 gap-8 md:ml-48 lg:ml-96 xl:hidden order-1 firefox-menu">
+          <div className="flex justify-end ml-8 gap-6 md:ml-48 lg:ml-96 xl:hidden order-1 firefox-menu">
             <DropdownMenu.Root>
               <DropdownMenu.Trigger
                 asChild
@@ -76,12 +76,12 @@ export function Navbar() {
               className="xl:hidden p-1 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm order-2"
               onClick={() => darkModeHandler()}
             >
-              {dark ? <Sun /> : <Moon />}
+              {dark ? <Sun width={32} height={32}/> : <Moon width={32} height={32}/>}
             </button>
           </div>
           <div className="hidden md:hidden lg:hidden xl:flex items-end flex-1 justify-end">
             <nav className="flex-1">
-              <ul className="md:flex justify-end flex-1 gap-6 font-semibold uppercase text-sm">
+              <ul className="md:flex justify-end items-center flex-1 gap-6 font-Poppins font-semibold uppercase text-sm">
                 <li className="transition duration-150 hover:border-b-2 hover:border-green-900 hover:text-green-900 ">
                   <a
                     href="/"
@@ -119,7 +119,7 @@ export function Navbar() {
                     className="p-1 mr-8  hover:border-green-900 hover:text-green-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm "
                     onClick={() => darkModeHandler()}
                   >
-                    {dark ? <Sun /> : <Moon />}
+                    {dark ? <Sun width={24} height={24}/> : <Moon width={24} height={24}/>}
                   </button>
                 </li>
               </ul>

@@ -19,7 +19,7 @@ export function TypeAnimationWriter() {
         cursor: "text",
       }}
       cursor={true}
-      className="text-xl lg:text-lg xl:text-xl text-green-900 dark:text-purple-800"
+      className="font-Poppins font-light text-xl lg:text-lg xl:text-base text-green-900 dark:text-purple-800"
     />
   );
 }

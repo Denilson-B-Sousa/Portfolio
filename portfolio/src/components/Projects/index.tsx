@@ -37,7 +37,7 @@ export function Project() {
     >
       <div className="text-center w-[100vw]" id="projects">
         <span className="text-green-900 text-2xl font-Kalam">Projetos</span>
-        <h3 className="dark:text-primary text-light-800 text-3xl laptop:text-2xl">
+        <h3 className="dark:text-primary text-light-800 font-Poppins text-3xl laptop:text-2xl">
           Meus projetos!
         </h3>
       </div>

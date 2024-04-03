@@ -26,6 +26,7 @@ export default {
     },
     fontFamily: {
       Kalam: "Kalam",
+      Poppins: "Poppins"
     },
     screens: {
       sm: "640px",
