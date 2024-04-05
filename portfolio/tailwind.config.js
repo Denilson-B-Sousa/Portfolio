@@ -3,7 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.tsx", "./src/*.tsx"],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+        backgroundImage: () => ({
+          'background': 'url(../../src/assets/Background.png)'
+        })
+    },
     colors: {
       "black-background": "#121214",
       "light-background": "#fafafa",
@@ -23,6 +27,7 @@ export default {
       "white": "#ffffff",
       "black": "#000000",
       "red-900": "#AA0000",
+      "darkBlue-600": "#151557"
     },
     fontFamily: {
       Kalam: "Kalam",
