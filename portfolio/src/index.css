@@ -59,3 +59,7 @@
   }
 }
 
+@font-face {
+  font-family: Rusty Cellair;
+  src: url('./assets/fonts/RustyCellair.ttf')  format('truetype');
+}

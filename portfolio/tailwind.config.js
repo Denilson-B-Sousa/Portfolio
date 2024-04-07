@@ -15,7 +15,7 @@ export default {
       "light-500": "#d2d3db",
       "light-600": "#9394a5",
       "light-800": "#484b6a",
-      "primary": "#F6F6F6",
+      "primary": "#EFEFEF",
       "purple-500": "#8b5cf6",
       "purple-800": "#6D28D9",
       "purple-900": "#581C87",
@@ -31,7 +31,9 @@ export default {
     },
     fontFamily: {
       Kalam: "Kalam",
-      Poppins: "Poppins"
+      Poppins: "Poppins",
+      Rusty: "Rusty Cellair",
+      MontSerrat: "Montserrat"
     },
     screens: {
       sm: "640px",

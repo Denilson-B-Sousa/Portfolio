@@ -36,8 +36,8 @@ export function Project() {
       className="flex justify-center flex-col my-8"
     >
       <div className="text-center w-[100vw]" id="projects">
-        <span className="text-green-900 text-2xl font-Kalam">Projetos</span>
-        <h3 className="dark:text-primary text-light-800 font-Poppins text-3xl laptop:text-2xl">
+        <span className="text-green-900 text-base font-MontSerrat font-light line uppercase tracking-widest">Projetos</span>
+        <h3 className="dark:text-primary text-light-800 font-Poppins font-black text-3xl laptop:text-2xl">
           Meus projetos!
         </h3>
       </div>

@@ -1,5 +1,6 @@
 
 export function NotFound() {
+
     return(
         <main className="flex flex-col md:flex-row xl:flex-row justify-center items-center bg-background bg-no-repeat bg-cover w-[100vw] h-[100vh] m-auto">
             <section className="order-2 md:order-1 xl:order-1">

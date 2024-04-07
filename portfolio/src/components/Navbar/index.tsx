@@ -35,7 +35,7 @@ export function Navbar() {
           <div>
             <a
               href="#"
-              className="font-Poppins font-bold text-xl md:text-sm ml-4 lg:ml-1 xl:ml-6 xl:text-lg uppercase"
+              className="font-Kalam font-bold text-xl md:text-sm ml-4 lg:ml-1 xl:ml-6 xl:text-lg uppercase"
             >
               Denilson B. Sousa
             </a>
@@ -81,7 +81,7 @@ export function Navbar() {
           </div>
           <div className="hidden md:hidden lg:hidden xl:flex items-end flex-1 justify-end">
             <nav className="flex-1">
-              <ul className="md:flex justify-end items-center flex-1 gap-6 font-Poppins font-semibold uppercase text-sm">
+              <ul className="md:flex justify-end items-center flex-1 gap-6 font-Poppins font-regular uppercase text-base">
                 <li className="transition duration-150 hover:border-b-2 hover:border-green-900 hover:text-green-900 ">
                   <a
                     href="/"

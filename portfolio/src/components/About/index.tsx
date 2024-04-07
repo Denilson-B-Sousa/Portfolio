@@ -4,8 +4,8 @@ export function About() {
   return (
     <>
       <div className="text-center" id="about">
-        <span className="font-Kalam text-2xl text-green-900">Sobre</span>
-        <h3 className="dark:text-primary text-light-800 font-Poppins text-3xl">Sobre mim:</h3>
+        <span className="text-green-900 text-base font-MontSerrat font-light line uppercase tracking-widest">Sobre</span>
+        <h3 className="dark:text-primary text-light-800 font-Poppins font-black text-3xl">Sobre mim:</h3>
       </div>
       <section className="m-auto dark:bg-gray-600 bg-light-500 w-[80vw] md:w-[92vw] rounded-md p-8 my-4">
         <div className="flex flex-col md:flex-row justify-center gap-6 m-auto">
