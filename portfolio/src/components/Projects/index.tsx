@@ -41,7 +41,7 @@ export function Project() {
           Meus projetos!
         </h3>
       </div>
-      <div className="grid grid-cols-1 m-auto md:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-4 px-8 py-10 gap-6 auto-rows-[auto]">
+      <div className="grid grid-cols-1 m-auto md:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-y-6 lg:gap-x-8 px-8 py-10 gap-6 auto-rows-[auto]">
         {Cards.map((card) => (
           <Card
             key={card.id}

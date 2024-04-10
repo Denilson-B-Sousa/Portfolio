@@ -2,7 +2,7 @@
 export function NotFound() {
 
     return(
-        <main className="flex flex-col md:flex-row xl:flex-row justify-center items-center bg-background bg-no-repeat bg-cover w-[100vw] h-[100vh] m-auto">
+        <main className="flex flex-col md:flex-row xl:flex-row justify-center items-center bg-background bg-no-repeat bg-cover w-[100vw] h-[100vh] m-auto overflow-hidden">
             <section className="order-2 md:order-1 xl:order-1">
                 <div className="flex flex-col text-primary w-[600px]">
                     <h1 className="text-center text-2xl md:text-left xl:text-left md:text-3xl xl:text-4xl font-Poppins font-extrabold">Ops, esta página não <br/> foi encontrada</h1>

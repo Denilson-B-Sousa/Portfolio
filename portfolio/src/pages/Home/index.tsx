@@ -6,14 +6,14 @@ import { Project } from "../../components/Projects";
 
 export function Home() {
   return (
-    <>
-      <Navbar />
-      <main className="overflow-x-hidden">
-        <Hero />
-        <Project />
-        <About />
-      </main>
-      <Footer />
-    </>
+      <div className="w-[100vw] h-[100vh] m-auto">
+        <Navbar />
+        <main className="overflow-x-hidden">
+          <Hero />
+          <Project />
+          <About />
+        </main>
+        <Footer />
+      </div>
   );
 }

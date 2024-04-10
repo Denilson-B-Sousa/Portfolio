@@ -30,18 +30,18 @@ export function Navbar() {
 
   return (
     <header>
-      <div className="flex w-full justify-end dark:text-primary md:px-6 py-6 md:py-8">
-        <div className="container flex items-center gap-8 xl:gap-4 flex-1 firefox-container">
+      <div className="flex w-full justify-center dark:text-primary px-8 md:px-6 py-6 md:py-8 xl:px-2 xl:mt-1">
+        <div className="container flex items-center gap-8 xl:gap-6 flex-1 firefox-container">
           <div>
             <a
               href="#"
-              className="font-Kalam font-bold text-xl md:text-sm ml-4 lg:ml-1 xl:ml-6 xl:text-lg uppercase"
+              className="font-Kalam font-bold text-xl md:text-sm lg:ml-1 xl:ml-[1rem] xl:text-lg uppercase focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
             >
               Denilson B. Sousa
             </a>
           </div>
 
-          <div className="flex justify-end ml-8 gap-6 md:ml-48 lg:ml-96 xl:hidden order-1 firefox-menu">
+          <div className="flex justify-end ml-8 gap-6 md:ml-48 lg:hidden xl:hidden order-1 firefox-menu">
             <DropdownMenu.Root>
               <DropdownMenu.Trigger
                 asChild
@@ -79,10 +79,10 @@ export function Navbar() {
               {dark ? <Sun width={32} height={32}/> : <Moon width={32} height={32}/>}
             </button>
           </div>
-          <div className="hidden md:hidden lg:hidden xl:flex items-end flex-1 justify-end">
+          <div className="hidden md:hidden lg:flex xl:flex items-end flex-1 justify-end">
             <nav className="flex-1">
-              <ul className="md:flex justify-end items-center flex-1 gap-6 font-Poppins font-regular uppercase text-base">
-                <li className="transition duration-150 hover:border-b-2 hover:border-green-900 hover:text-green-900 ">
+              <ul className="md:flex justify-end items-center flex-1 gap-6 font-Poppins font-regular uppercase text-base lg:text-xs xl:text-base">
+                <li className="hover:delay-75 hover:border-b-[1px] dark:hover:border-white ">
                   <a
                     href="/"
                     className="focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
@@ -90,15 +90,15 @@ export function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="hover:border-b-2 hover:border-green-900 hover:text-green-900">
+                <li className="hover:delay-75 hover:border-b-[1px] dark:hover:border-white">
                   <a
-                    href="#project"
+                    href="#projects"
                     className=" focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
                   >
                     Projetos
                   </a>
                 </li>
-                <li className="hover:border-b-2 hover:border-green-900 hover:text-green-900">
+                <li className="hover:delay-75 hover:border-b-[1px] dark:hover:border-white">
                   <a
                     href="#habilities"
                     className=" focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
@@ -106,7 +106,7 @@ export function Navbar() {
                     Habilidades
                   </a>
                 </li>
-                <li className="hover:border-b-2 hover:border-green-900 hover:text-green-900">
+                <li className="hover:delay-75 hover:border-b-[1px] dark:hover:border-light-500">
                   <a
                     href="#about"
                     className=" focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
