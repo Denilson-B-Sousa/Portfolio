@@ -12,7 +12,7 @@ export function Router() {
             element={
               <>
                 <Helmet>
-                  <title>Home - Denilson B. Sousa</title>
+                  <title className="font-Poppins font-regular">Home - Denilson B. Sousa</title>
                 </Helmet>
                 <Home/>
               </>
@@ -23,7 +23,7 @@ export function Router() {
           element={
             <>
               <Helmet>
-                <title>Home - Portfólio</title>
+                <title className="font-Poppins font-regular">Home - Portfólio</title>
               </Helmet>
               <Home/>
             </>

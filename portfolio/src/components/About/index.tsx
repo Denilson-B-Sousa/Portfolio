@@ -1,4 +1,4 @@
-import { Code, GithubLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
+import { Code, GithubLogo, LinkedinLogo } from "phosphor-react";
 import profile from "../../assets/perfil.png";
 
 export function About() {
@@ -15,28 +15,28 @@ export function About() {
               <img
                 src={profile}
                 alt="Imagem de perfil"
-                className="rounded-full w-48"
+                className="rounded-full w-48 border-2 dark:border-white mt-4"
               />
               <ul className="flex justify-center gap-6 my-4 list-none"> 
                 <li>
-                  <a href="#" title="Linkedin" className="dark:text-white text-gray-600 hover:text-purple-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm">
+                  <a href="#" title="Linkedin" className=" dark:text-gold  text-gray-600 hover:text-purple-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm">
                     <LinkedinLogo width={32} height={32}/>
                   </a>
                 </li>
                 <li>
-                  <a href="#" title="Github" className="dark:text-white text-gray-600 hover:text-purple-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm">
+                  <a href="#" title="Github" className="dark:text-gold text-gray-600 hover:text-purple-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm">
                     <GithubLogo width={32} height={32}/>
                   </a>
                 </li>
                 <li>
-                  <a href="#" title="Dev Community" className="dark:text-white text-gray-600 hover:text-purple-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm">
+                  <a href="#" title="Dev Community" className="dark:text-gold text-gray-600 hover:text-purple-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm">
                     <Code width={32} height={32}/>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="">
-              <h4 className="font-Kalam text-2xl my-2 text-green-900 ">Sobre mim:</h4>
+              <h4 className="font-ShadowsIntoLightTwo text-2xl lg:text-3xl xl:text-3xl my-4 text-green-900">Sobre Mim:</h4>
               <ul className="inline-grid gap-4 font-Poppins font-light text-sm dark:text-primary text-black ">
                 <li>👨🏾‍💻 · Desenvolvedor web front-end</li>
                 <li>🎓 · Cursando sistemas de informação</li>

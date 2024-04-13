@@ -1,6 +1,6 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
-import { List, Moon } from "phosphor-react";
+import { List, Moon} from "phosphor-react";
 import { Sun } from "phosphor-react";
 import { useState } from "react";
 
@@ -31,11 +31,11 @@ export function Navbar() {
   return (
     <header>
       <div className="flex w-full justify-center dark:text-primary px-8 md:px-6 py-6 md:py-8 xl:px-2 xl:mt-1">
-        <div className="container flex items-center gap-8 xl:gap-6 flex-1 firefox-container">
+        <div className="container flex items-center gap-14 xl:gap-6 flex-1 firefox-container">
           <div>
             <a
-              href="#"
-              className="font-Kalam font-bold text-xl md:text-sm lg:ml-1 xl:ml-[1rem] xl:text-lg uppercase focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
+              href="/"
+              className="font-ShadowsIntoLight font-bold text-2xl md:text-sm lg:ml-1 xl:ml-[1.5rem] xl:text-3xl focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
             >
               Denilson B. Sousa
             </a>

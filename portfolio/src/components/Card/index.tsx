@@ -4,17 +4,19 @@ import * as ScrollArea from "@radix-ui/react-scroll-area";
 
 import { GithubLogo, X, ArrowSquareOut, Globe } from "phosphor-react";
 
-type Card = {
+type CardData = {
   title: string;
   description: string;
-  imageURI: string;
+  imageUrl: string;
+  repositoryUrl: string;
+  liveUrl: string;
 };
 
-export function Card({ title, description, imageURI }: Card) {
+export function Card({ title, description, imageUrl, repositoryUrl, liveUrl }: CardData) {
   return (
     <Dialog.Root>
       <DialogTrigger className="rounded-md flex justify-center flex-col md:flex-row-2 h-80 w-80 md:w-64 md:h-72 text-left p-4 md:p-4 gap-2 bg-light-500 dark:bg-gray-600  hover:ring-2 hover:ring-purple-800 focus-visible:ring-2 focus-visible:ring-purple-800 outline-none firefox-card">
-        <img src={imageURI} alt="" width={500} />
+        <img src={imageUrl} alt="" width={500} />
 
         <h4 className="text-xl font-Poppins font-semibold dark:text-primary text-black">{title}</h4>
         <p className="dark:text-primary text-black">{description.split("", 80)}... <br/><span className="dark:text-purple-500 text-purple-800">Ver mais</span></p>
@@ -28,13 +30,13 @@ export function Card({ title, description, imageURI }: Card) {
 
           <ScrollArea.Root className="flex justify-center items-center m-auto w-[100vw] md:w-[85%] p-4 rounded overflow-hidden ">
             <ScrollArea.Viewport className="w-[80vw] h-[62vh] md:h-[80vh] rounded bg-light-500 dark:bg-gray-600 p-6">
-              <img src={imageURI} alt="" width={600} className="rounded-lg transition-transform  hover:scale-110 cursor-pointer" />
+              <img src={imageUrl} alt="" width={600} className="rounded-lg transition-transform  hover:scale-110 cursor-pointer" />
               <div className="dark:text-primary text-black">
                 
                 <h4 className="text-3xl font-semibold mt-4">{title}</h4>
                 <p className="dark:text-primary text-black text-base leading-6">{description}</p>
                 <a
-                  href="#"
+                  href={repositoryUrl}
                   target="_blank"
                   className="inline-flex items-center justify-between  w-full p-2 rounded-md bg-white text-black uppercase mt-6 mb-2 focus-visible:ring-4 focus-visible:ring-green-900 outline-none"
                 >
@@ -43,7 +45,7 @@ export function Card({ title, description, imageURI }: Card) {
                   <ArrowSquareOut width={24} height={24}/>
                 </a>
                 <a
-                  href="#"
+                  href={liveUrl}
                   target="_blank"
                   className="inline-flex items-center justify-between w-full p-2 rounded-md bg-white text-black uppercase mt-2 focus-visible:ring-4 focus-visible:ring-green-900 outline-none"
                 >

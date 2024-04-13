@@ -4,13 +4,14 @@ export function TypeAnimationWriter() {
   return (
     <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
+        
         "Desenvolvedor Web Front-end",
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        1000, 
         "Desenvolvedor Web Back-end",
         1000,
         "Desenvolvedor Web Full Stack!",
         1000,
+        
       ]}
       wrapper="span"
       speed={60}
@@ -19,7 +20,7 @@ export function TypeAnimationWriter() {
         cursor: "text",
       }}
       cursor={true}
-      className="font-MontSerrat font-light text-xl lg:text-lg xl:text-base text-green-900 dark:text-purple-800"
+      className="font-MontSerrat font-regular text-xl lg:text-lg xl:text-base text-green-900 dark:text-purple-800"
     />
   );
 }

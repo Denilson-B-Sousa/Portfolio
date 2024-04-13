@@ -6,7 +6,10 @@ export default {
     extend: {
         backgroundImage: () => ({
           'background': 'url(../../src/assets/Background.png)'
-        })
+        }),
+        animation: {
+          'spin-slow': 'spin 2s linear infinite',
+        }
     },
     colors: {
       "black-background": "#121214",
@@ -27,13 +30,16 @@ export default {
       "white": "#ffffff",
       "black": "#000000",
       "red-900": "#AA0000",
-      "darkBlue-600": "#151557"
+      "darkBlue-600": "#151557",
+      "gold": "#E0C787"
     },
     fontFamily: {
       Kalam: "Kalam",
       Poppins: "Poppins",
       Rusty: "Rusty Cellair",
-      MontSerrat: "Montserrat"
+      MontSerrat: "Montserrat",
+      ShadowsIntoLight: "Shadows Into Light",
+      ShadowsIntoLightTwo: "Shadows Into Light Two"
     },
     screens: {
       sm: "640px",

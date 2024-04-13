@@ -1,36 +1,12 @@
+import { Spinner } from "phosphor-react";
+import { useProjectData } from "../../hooks/useProjectData";
 import { Card } from "../Card";
 
+
 export function Project() {
-  const Cards = [
-    {
-      id: 1,
-      title: "Notes",
-      description:
-        "Aplicação produzida durante evento nlw da rocketseat, a aplicação trata-se de um criador de notas, tanto digitada quanto a partir da gravação de voz.",
-      image: "../../src/assets/notes.png",
-    },
-    {
-      id: 2,
-      title: "Notes",
-      description:
-        "Aplicação produzida durante evento nlw da rocketseat, a aplicação trata-se de um criador de notas, tanto digitada quanto a partir da gravação de voz.",
-      image: "../../src/assets/notes.png",
-    },
-    {
-      id: 3,
-      title: "Notes",
-      description:
-        "Aplicação produzida durante evento nlw da rocketseat, a aplicação trata-se de um criador de notas, tanto digitada quanto a partir da gravação de voz.",
-      image: "../../src/assets/notes.png",
-    },
-    {
-      id: 4,
-      title: "Notes",
-      description:
-      "Aplicação produzida durante evento nlw da rocketseat, a aplicação trata-se de um criador de notas, tanto digitada quanto a partir da gravação de voz.",
-      image: "../../src/assets/notes.png",
-    }
-  ];
+
+  const { data, isLoading } = useProjectData();
+
   return (
     <section
       className="flex justify-center flex-col my-8"
@@ -42,14 +18,24 @@ export function Project() {
         </h3>
       </div>
       <div className="grid grid-cols-1 m-auto md:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-y-6 lg:gap-x-8 px-8 py-10 gap-6 auto-rows-[auto]">
-        {Cards.map((card) => (
-          <Card
-            key={card.id}
-            title={card.title}
-            description={card.description}
-            imageURI={card.image}
-          />
-        ))}
+        
+          {
+            !isLoading && <>
+          
+            {data?.data.map((project) => (
+                <Card
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                imageUrl={project.imageUrl}
+                repositoryUrl={project.repositoryUrl}
+                liveUrl={project.liveUrl}
+              />
+            ))}
+
+            </>
+          }
+          {isLoading && <span className="absolute middle-[50%] left-[50%] transform: translate-x-[-50%] translate-y-[-50%]"><Spinner className="transition-all duration-200 animate-spin-slow" width={48} height={48}/></span>}
       </div>
     </section>
   );
