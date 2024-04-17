@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+.tsconfig.json
+.server.json
+.responsividade.txt
+
 
 # Editor directories and files
 .vscode/*

@@ -4,7 +4,7 @@ import { ProjectData} from "../interfaces/project-data";
 
 
 
-const API_URL = "http://localhost:8080/projects";
+const API_URL = "http://localhost:3333/projects";
 
 const fetchData = async (): AxiosPromise<ProjectData[]> => {
     const response = await axios.get(API_URL);

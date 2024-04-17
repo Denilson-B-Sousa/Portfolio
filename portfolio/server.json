@@ -1,0 +1,28 @@
+{
+"projects": [
+    {
+    "id": 1,
+    "title": "Notes: Aplicação para criação de notas",
+    "description": "Essa aplicação foi desenvolvida durante o NLW Experts da Rocketseat utilizando React, TypeScript, Tailwind e a SpeechRecognition API.",
+    "imageUrl": "../src/assets/notes.png",
+    "repositoryUrl": "https://github.com/Denilson-B-Sousa/nlw-expert-react",
+    "liveUrl": "https://nlw-expert-react.vercel.app/"
+    },
+    {
+    "id": 2,
+    "title": "Em breve...",
+    "description": "",
+    "imageUrl": "../src/assets/developer.png",
+    "repositoryUrl": "#",
+    "liveUrl": "#"
+    },
+    {
+    "id": 3,
+    "title": "Em breve...",
+    "description": "",
+    "imageUrl": "../src/assets/developer.png",
+    "repositoryUrl": "#",
+    "liveUrl": "#"
+    }
+    ]
+}

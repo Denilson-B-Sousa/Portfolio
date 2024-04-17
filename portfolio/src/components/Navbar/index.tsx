@@ -11,9 +11,7 @@ export function Navbar() {
     setDark(!dark);
 
     {
-      dark
-        ? localStorage.setItem("theme", "light")
-        : localStorage.setItem("theme", "dark");
+      dark ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
     }
 
     saveThemePreferences();

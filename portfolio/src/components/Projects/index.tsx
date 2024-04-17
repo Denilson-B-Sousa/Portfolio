@@ -5,7 +5,7 @@ import { Card } from "../Card";
 
 export function Project() {
 
-  const { data, isLoading } = useProjectData();
+  const { data, isFetching} = useProjectData();
 
   return (
     <section
@@ -19,12 +19,12 @@ export function Project() {
       </div>
       <div className="grid grid-cols-1 m-auto md:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-y-6 lg:gap-x-8 px-8 py-10 gap-6 auto-rows-[auto]">
         
-          {
-            !isLoading && <>
+            {isFetching &&  <span className="absolute middle-[50%] left-[50%] transform: translate-x-[-50%] translate-y-[-50%]"><Spinner className="transition-all duration-200 animate-spin-slow" width={48} height={48}/></span>}
           
             {data?.data.map((project) => (
                 <Card
                 key={project.id}
+                id={project.id}
                 title={project.title}
                 description={project.description}
                 imageUrl={project.imageUrl}
@@ -32,10 +32,6 @@ export function Project() {
                 liveUrl={project.liveUrl}
               />
             ))}
-
-            </>
-          }
-          {isLoading && <span className="absolute middle-[50%] left-[50%] transform: translate-x-[-50%] translate-y-[-50%]"><Spinner className="transition-all duration-200 animate-spin-slow" width={48} height={48}/></span>}
       </div>
     </section>
   );
