@@ -24,6 +24,13 @@
   background: #581c87;
 }
 
+.gradient-text {
+  background: linear-gradient(to right, #8b5cf6, #581C87);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 @-moz-document url-prefix() {
 
   /*Mobile menu hamburguer */

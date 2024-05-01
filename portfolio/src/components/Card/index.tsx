@@ -14,11 +14,13 @@ type CardData = {
 export function Card({ id, title, description, imageUrl, repositoryUrl, liveUrl}: CardData) {
   return (
     <Dialog.Root>
-      <DialogTrigger className="rounded-md flex justify-center flex-col md:flex-row-2 h-80 w-80 md:w-64 md:h-72 text-left p-4 md:p-4 gap-2 bg-light-500 dark:bg-gray-600  hover:ring-2 hover:ring-purple-800 focus-visible:ring-2 focus-visible:ring-purple-800 outline-none firefox-card">
-        <img src={imageUrl} alt="" width={500} />
+      <DialogTrigger className="flex flex-col  rounded-md bg-slate-800 text-left p-[1.75rem] gap-2 overflow-hidden relative hover:ring-2 outline-none bg-light-500 dark:bg-gray-600 dark:hover:ring-purple-900 hover:ring-slate-600  focus-visible:2 focus-visible:ring-lime-400">
+        <div>
+          <img src={imageUrl} alt="" width={500} className="rounded-md"/>
+        </div>
 
-        <h4 className="text-xl font-Poppins font-semibold dark:text-primary text-black">{title.split(":", 1)}</h4>
-        <Dialog.DialogDescription className="dark:text-primary">{description.split("", 80)}</Dialog.DialogDescription>
+        <h4 className="text-2xl font-Poppins font-semibold dark:text-primary text-black">{title.split(":", 1)}</h4>
+        <Dialog.DialogDescription className="dark:text-primary text-left">{description}</Dialog.DialogDescription>
       </DialogTrigger>
         <Modal 
           id={id}

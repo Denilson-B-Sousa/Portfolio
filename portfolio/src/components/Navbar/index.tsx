@@ -28,12 +28,12 @@ export function Navbar() {
 
   return (
     <header>
-      <div className="flex w-full justify-center dark:text-primary px-8 md:px-6 py-6 md:py-8 xl:px-2 xl:mt-1">
-        <div className="container flex items-center gap-14 xl:gap-6 flex-1 firefox-container">
+      <div className="flex w-full justify-center dark:text-primary px-8 md:px-6 py-2 md:py-8 xl:px-8 xl:mt-1">
+        <div className="max-w-7xl flex items-center gap-4 xl:gap-6 xl:p-4 flex-1 firefox-container">
           <div>
             <a
               href="/"
-              className="font-ShadowsIntoLight font-bold text-2xl md:text-sm lg:ml-1 xl:ml-[1.5rem] xl:text-3xl focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
+              className="font-ShadowsIntoLight font-bold text-2xl md:text-sm lg:ml-1 xl:ml-[2rem] xl:text-4xl focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
             >
               Denilson B. Sousa
             </a>
@@ -79,7 +79,7 @@ export function Navbar() {
           </div>
           <div className="hidden md:hidden lg:flex xl:flex items-end flex-1 justify-end">
             <nav className="flex-1">
-              <ul className="md:flex justify-end items-center flex-1 gap-6 font-Poppins font-regular uppercase text-base lg:text-xs xl:text-base">
+              <ul className="md:flex justify-end items-center flex-1 gap-8 font-Poppins font-regular uppercase text-base lg:text-xs xl:text-xl">
                 <li className="hover:delay-75 hover:border-b-[1px] dark:hover:border-white ">
                   <a
                     href="/"

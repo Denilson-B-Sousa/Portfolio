@@ -20,7 +20,7 @@ export function TypeAnimationWriter() {
         cursor: "text",
       }}
       cursor={true}
-      className="font-MontSerrat font-regular text-xl lg:text-lg xl:text-base text-green-900 dark:text-purple-800"
+      className="font-Poppins font-light text-xl lg:text-lg xl:text-xl xl:mt-2 text-green-900 dark:text-purple-800 uppercase tracking-wide"
     />
   );
 }

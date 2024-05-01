@@ -9,6 +9,7 @@ export default {
         }),
         animation: {
           'spin-slow': 'spin 2s linear infinite',
+          'pulse-slow': 'pulse 3s linear infinite'
         }
     },
     colors: {
@@ -25,6 +26,7 @@ export default {
       "violet": "#31004a",
       "transparent": "transparent",
       "linkedin": "#0082C6",
+      "green-500": "#7DFFAF",
       "green-900": "#00875F",
       "gray-600": "#202024",
       "white": "#ffffff",

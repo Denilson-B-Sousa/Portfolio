@@ -4,8 +4,7 @@ import { TypeAnimationWriter } from "../TypeAnimation";
 
 export function Hero() {
   return (
-    <section className="lg:px-0">
-      <div className="container flex flex-col items-center  lg:flex-row xl:flex-row md:justify-center lg:justify-center lg:gap-0 xl:gap-2 gap-4 md:gap-6 m-auto">
+    <section className="flex items-center gap-32 mx-auto max-w-[76rem] p-4">
         <div className="flex md:hidden lg:hidden xl:hidden">
           <img
             src={Programming}
@@ -13,14 +12,16 @@ export function Hero() {
             className="p-[12px]  hover:animate-pulse cursor-default w-full"
           />
         </div>
-        <div className="w-full md:w-full lg:w-[70vw] xl:w-[50vw] text-left md:text-center lg:text-left ">
-          <div className="px-6 md:px-0 lg:px-0 xl:px-0">
-            <h1 className="font-Poppins font-bold text-3xl lg:text-3xl xl:text-4xl firefox-title dark:text-primary text-purple-800">
+        <div className="max-w-6xl text-left md:text-center lg:text-left ">
+          <div className="flex flex-col gap-2 px-6 md:px-0 lg:px-0 xl:px-0">
+            <span className="bg-gradient-to-r from-purple-900 to-purple-500 dark:from-green-900 dark:to-green-500 bg-clip-text text-transparent tracking-widest mb-4">WEB DEVELOPER</span>
+            <h1 className="font-Poppins font-bold text-3xl lg:text-3xl xl:text-[3.25rem] firefox-title dark:text-primary text-purple-800">
               Olá, Eu sou Denilson!
             </h1>
             <TypeAnimationWriter />
-            <p className="w-[90%] text-sm md:text-xs mt-2 font-Poppins font-light xl:font-light dark:text-primary text-black">
-              Sou estudante de sistemas de informação no Instituto Federal de Goiás - IFG. Especializando-se para desenvolver páginas web com ReactTS e Angular framework.
+
+            <p className="max-w-[40vw] mt-1 font-Poppins font-light xl:font-light dark:text-primary text-black">
+              Estudante de sistemas de informação no Instituto Federal de Goiás. Especializando-se para desenvolver páginas web com ReactTS e Angular 17.
             </p>
           </div>
           <div className="flex justify-start lg:justify-start xl:justify-start my-6 mx-6 gap-4 md:gap-4 lg:mx-0 xl:gap-4 xl:mx-0 uppercase font-semibold firefox-button-position">
@@ -46,14 +47,13 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block xl:block lg:w-[50%] xl:w-[40%]">
+        <div className="hidden lg:block xl:block">
           <img
             src={Programming}
             alt=""
             className="hover:animate-pulse cursor-default w-full"
           />
         </div>
-      </div>
     </section>
   );
 }

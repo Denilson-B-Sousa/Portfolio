@@ -9,15 +9,15 @@ export function Project() {
 
   return (
     <section
-      className="flex justify-center flex-col my-8"
+      className="mx-auto lg:max-w-6xl xl:max-w-7xl my-12 space-y-6 p-5"
     >
-      <div className="text-center w-[100vw]" id="projects">
+      <div className="text-center" id="projects">
         <span className="text-green-900 text-base font-MontSerrat font-light line uppercase tracking-widest">Projetos</span>
-        <h3 className="dark:text-primary text-light-800 font-Poppins font-black text-3xl laptop:text-2xl">
+        <h3 className="dark:text-primary text-light-800 font-Poppins font-black text-3xl laptop:text-2xl text-center">
           Meus projetos!
         </h3>
       </div>
-      <div className="grid grid-cols-1 m-auto md:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:gap-y-6 lg:gap-x-8 px-8 py-10 gap-6 auto-rows-[auto]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-6">
         
             {isFetching &&  <span className="absolute middle-[50%] left-[50%] transform: translate-x-[-50%] translate-y-[-50%]"><Spinner className="transition-all duration-200 animate-spin-slow" width={48} height={48}/></span>}
           
