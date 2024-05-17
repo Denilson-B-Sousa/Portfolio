@@ -2,38 +2,41 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 import { List, Moon} from "phosphor-react";
 import { Sun } from "phosphor-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+const html = document.documentElement;
 
 export function Navbar() {
-  const [dark, setDark] = useState(false);
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
-  const darkModeHandler = () => {
-    setDark(!dark);
+  function handleThemeChange() {
 
-    {
-      dark ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
-    }
+    const newTheme =  theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  } 
 
-    saveThemePreferences();
-  };
+  useEffect(() => {
 
-  const saveThemePreferences = () => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
-      document.documentElement.classList.toggle("dark");
+    if(theme === 'dark') {
+      html.classList.add('dark');
+
     } else {
-      document.documentElement.classList.remove("dark");
+      html.classList.remove('dark');
     }
-  };
 
+    localStorage.setItem('theme', theme);
+
+
+  }, [theme])
   return (
     <header>
       <div className="flex w-full justify-center dark:text-primary px-8 md:px-6 py-2 md:py-8 xl:px-8 xl:mt-1">
-        <div className="max-w-7xl flex items-center gap-4 xl:gap-6 xl:p-4 flex-1 firefox-container">
+        <div className="md:max-w-4xl lg:max-w-5xl xl:max-w-7xl flex items-center gap-4 md:gap-72 xl:gap-6 xl:p-4 flex-1 firefox-container">
           <div>
             <a
               href="/"
-              className="font-ShadowsIntoLight font-bold text-2xl md:text-sm lg:ml-1 xl:ml-[2rem] xl:text-4xl focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
+              className="font-ShadowsIntoLight font-bold text-2xl lg:text-4xl xl:ml-[2rem] xl:text-4xl focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm"
             >
               Denilson B. Sousa
             </a>
@@ -72,14 +75,14 @@ export function Navbar() {
             </DropdownMenu.Root>
             <button
               className="xl:hidden p-1 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm order-2"
-              onClick={() => darkModeHandler()}
+              onClick={() => handleThemeChange()}
             >
-              {dark ? <Sun width={32} height={32}/> : <Moon width={32} height={32}/>}
+              {theme === 'dark' ? <Sun width={32} height={32}/> : <Moon width={32} height={32}/>}
             </button>
           </div>
           <div className="hidden md:hidden lg:flex xl:flex items-end flex-1 justify-end">
             <nav className="flex-1">
-              <ul className="md:flex justify-end items-center flex-1 gap-8 font-Poppins font-regular uppercase text-base lg:text-xs xl:text-xl">
+              <ul className="md:flex justify-end items-center flex-1 gap-8 font-Poppins font-regular uppercase text-base lg:text-base xl:text-xl">
                 <li className="hover:delay-75 hover:border-b-[1px] dark:hover:border-white ">
                   <a
                     href="/"
@@ -115,9 +118,9 @@ export function Navbar() {
                 <li>
                   <button
                     className="p-1 mr-8  hover:border-green-900 hover:text-green-900 focus-visible:ring-2 focus-visible:ring-green-900 outline-none rounded-sm "
-                    onClick={() => darkModeHandler()}
+                    onClick={() => handleThemeChange()}
                   >
-                    {dark ? <Sun width={24} height={24}/> : <Moon width={24} height={24}/>}
+                    {theme === 'dark' ? <Sun width={24} height={24}/> : <Moon width={24} height={24}/>}
                   </button>
                 </li>
               </ul>

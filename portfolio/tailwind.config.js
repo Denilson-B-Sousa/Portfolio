@@ -9,7 +9,12 @@ export default {
         }),
         animation: {
           'spin-slow': 'spin 2s linear infinite',
-          'pulse-slow': 'pulse 3s linear infinite'
+          'pulse-slow': 'pulse 3s linear infinite',
+          'fade-out': 'fadeOut 5s ease-in-out',
+          'fade-in': 'transition ease-in',
+          'fade-in-down': 'fade-in-down 0.5s ease-out'
+
+
         }
     },
     colors: {
@@ -55,9 +60,6 @@ export default {
 
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
-
-      "2xl": "1536px",
-      // => @media (min-width: 1536px) { ... }
     },
   },
   plugins: [],

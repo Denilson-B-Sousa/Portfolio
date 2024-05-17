@@ -1,8 +1,5 @@
-import { About } from "../../components/About";
-import { Footer } from "../../components/Footer";
-import { Hero } from "../../components/Hero";
-import { Navbar } from "../../components/Navbar";
-import { Project } from "../../components/Projects";
+import { Navbar, Hero, Project, About, Footer } from '../../components/index';
+
 
 export function Home() {
   return (

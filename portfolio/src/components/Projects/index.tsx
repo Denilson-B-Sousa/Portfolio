@@ -2,8 +2,8 @@ import { Spinner } from "phosphor-react";
 import { useProjectData } from "../../hooks/useProjectData";
 import { Card } from "../Card";
 
-
 export function Project() {
+
 
   const { data, isFetching} = useProjectData();
 

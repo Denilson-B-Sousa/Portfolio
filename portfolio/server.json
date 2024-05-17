@@ -25,7 +25,7 @@
         "liveUrl": "https://nlw-expert-react.vercel.app/"
     },
     {
-        "id": 1,
+        "id": 4,
         "title": "Notes: Aplicação para criação de notas",
         "description": "Essa aplicação foi desenvolvida durante o NLW Experts da Rocketseat utilizando React, TypeScript, Tailwind e a SpeechRecognition API.",
         "imageUrl": "../src/assets/notes.png",
